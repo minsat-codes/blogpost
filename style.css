@@ -1,1 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Progress Bar */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #00f7ff;
+    width: 0%;
+    z-index: 999;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f7ff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00f7ff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Blog Card */
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    width: 800px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Meta */
+.meta {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Content */
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+blockquote {
+    padding: 15px 20px;
+    background: rgba(0, 255, 255, 0.1);
+    border-left: 4px solid #00f7ff;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Actions */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00f7ff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00c4cc;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .blog-card {
+        width: 95%;
+    }
+}
