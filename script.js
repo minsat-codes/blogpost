@@ -3,6 +3,7 @@ let likeBtn = document.getElementById("likeBtn");
 let likeCount = document.getElementById("likeCount");
 let count = 0;
 
+
 likeBtn.addEventListener("click", () => {
     count++;
     likeCount.textContent = count + " Likes";
