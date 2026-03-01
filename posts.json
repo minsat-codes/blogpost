@@ -1,1 +1,23 @@
-
+[
+  {
+    "id": 1,
+    "title": "FlashTech 2026 Recap",
+    "category": "Conferences",
+    "image": "https://via.placeholder.com/500x250",
+    "content": "This month’s tech conference brought major reveals: AI chips, robotics, new AR hardware, and developer tools."
+  },
+  {
+    "id": 2,
+    "title": "NanoPhone Z1 Unveiled",
+    "category": "Gadgets",
+    "image": "https://via.placeholder.com/500x250",
+    "content": "The NanoPhone Z1 showcases a neuromorphic engine for low‑power AI and advanced AR sensors — revolutionizing everyday smart devices."
+  },
+  {
+    "id": 3,
+    "title": "AI Startup Funding Boom",
+    "category": "AI",
+    "image": "https://via.placeholder.com/500x250",
+    "content": "Investment in AI startups is at an all-time high, with major breakthroughs in natural language processing and robotics."
+  }
+]
