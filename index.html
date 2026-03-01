@@ -1,81 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>TechVerse | Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>TechSphere | Latest Tech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-    <!-- Progress Bar -->
-    <div id="progressBar"></div>
+<div id="particles-js"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <h2 class="logo">TechVerse</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <h1 class="logo">TechSphere 🔥</h1>
+    <div class="theme-toggle">
+        <button id="themeBtn">🌙</button>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Conferences</a></li>
+        <li><a href="#">Releases</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Main Blog Container -->
-    <main class="container">
+<main class="main-wrap">
 
-        <article class="blog-card">
+    <h2>Latest Tech Highlights</h2>
 
-            <header>
-                <h1>My First Tech Blog Post</h1>
-                <p class="meta">
-                    By <strong>Jane Doe</strong> |
-                    <time datetime="2025-01-29">January 29, 2025</time>
-                </p>
-            </header>
+    <div class="filters">
+        <button data-category="All" class="active">All</button>
+        <button data-category="Conferences">Conferences</button>
+        <button data-category="Gadgets">Gadgets</button>
+        <button data-category="AI">AI</button>
+    </div>
 
-            <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+    <div id="cardsGrid" class="cards-grid"></div>
+</main>
 
-            <section class="content">
-                <p>
-                    Welcome to my first blog post! This is where I share my thoughts 
-                    on web development, design, and technology.
-                </p>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="" />
+        <p id="modalContent"></p>
+        <div id="commentsSection">
+            <h3>Comments</h3>
+            <div id="commentsList"></div>
+            <input type="text" id="commentInput" placeholder="Add a comment">
+            <button id="addCommentBtn">Post</button>
+        </div>
+    </div>
+</div>
 
-                <p>
-                    Learning HTML is the first step in becoming a great web developer. 
-                    By understanding structure, you create readable and accessible websites.
-                </p>
-
-                <blockquote>
-                    "Web development is both an art and a science. Structure matters!"
-                </blockquote>
-
-                <p>
-                    Stay tuned for more posts, where I’ll dive into CSS and JavaScript 
-                    to make these pages more dynamic.
-                </p>
-            </section>
-
-            <!-- Interaction Section -->
-            <div class="actions">
-                <button id="likeBtn">❤️ Like</button>
-                <span id="likeCount">0 Likes</span>
-            </div>
-
-        </article>
-
-    </main>
-
-    <!-- JS -->
-    <script src="script.js"></script>
-
+<script src="particles.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
