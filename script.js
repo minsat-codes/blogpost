@@ -10,6 +10,7 @@ fetch('posts.json')
     renderPosts();
 });
 
+
 // Render posts
 function renderPosts() {
     const grid = document.getElementById('cardsGrid');
