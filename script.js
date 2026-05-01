@@ -11,6 +11,7 @@ fetch('posts.json')
 });
 
 
+
 // Render posts
 function renderPosts() {
     const grid = document.getElementById('cardsGrid');
