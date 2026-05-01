@@ -13,6 +13,7 @@ particlesJS("particles-js", {
             "onhover": {"enable": true, "mode": "grab"},
             "onclick": {"enable": true, "mode": "push"}
 
+            
         },
         "modes": {
             "grab": {"distance": 150},
